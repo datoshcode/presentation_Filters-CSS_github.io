@@ -1,0 +1,121 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+		font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 980px;
+	margin: 30px auto;
+}
+
+.title {
+	text-align: center;
+  padding-top: 10px;
+}
+
+.block {
+	width: 45%;
+	margin: 40px 10px;
+	border: 1px solid #888888;
+	box-sizing: border-box;
+	max-width: 600px;
+	text-align: center;
+	padding: 5px;
+}
+
+figcaption {
+	padding-top: 10px;
+	font-size: 14px;
+	color: grey;
+	font-weight: 600;
+}
+
+code {
+	font-weight: 400;
+	color: #39A639;
+	font-size: 12px
+}
+
+.block img {
+	max-width: 100%;
+  display: block;
+}
+
+/*Фильтры*/
+/* Яркость */
+.block_1 img {
+  /*ярче от 100% и выше*/
+/*	filter: brightness(150%);*/
+	/*темнее от 0 до 100%*/
+		filter: brightness(50%);
+}
+
+/* Контрастность */
+.block_2 img {
+	filter: contrast(150%);
+}
+
+/* Черно-белое изображение */
+.block_3 img {
+	filter: grayscale(100%);
+}
+
+/* Сепия */
+.block_4 img {
+	filter: sepia(50%);
+}
+
+/* Насыщенность */
+.block_5 img {
+	filter: saturate(150%);
+}
+
+/* Инвертирование цвета */
+.block_6 img {
+	filter: invert(100%);
+}
+
+/* Прозрачность */
+.block_7 img {
+	filter: opacity(50%);
+}
+
+/* Размытие */
+.block_8 img {
+	filter: blur(5px);
+}
+
+/* Тень */
+.block_9 img {
+	filter: drop-shadow(5px 5px 15px #888888);
+}
+
+/* Тень */
+
+.block_10 {
+	border: none;
+}
+
+.block_10 figcaption {
+	margin-top: 68px;
+}
+
+.block_10 img {
+	filter: drop-shadow(5px 5px 15px #888888);	
+}
+
+@media (max-width: 450px) {
+	.block {
+	display: block;
+	width: 100%;
+	padding: 5px 10px; 
+}
+
+
