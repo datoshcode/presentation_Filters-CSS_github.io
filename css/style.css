@@ -111,7 +111,7 @@ code {
 	filter: drop-shadow(5px 5px 15px #888888);	
 }
 
-.author {
+.author a {
 	font-size: 10px;
 	text-align: center;
 }
